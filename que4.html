@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Question 4</title>
+  <style>
+    .forms {
+      border: 2px solid black;
+      background-color: rgb(255, 250, 244);
+      padding: 25px;
+      width: 40vw;
+      margin: 30px auto;
+      font-size: 25px;
+      font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+        sans-serif;
+    }
+
+    #submit {
+      margin: 20px auto;
+      padding: 5px 20px;
+      background-color: black;
+      color: white;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      border-radius: 5px;
+      border: 0px;
+      font-size: 20px;
+    }
+
+    #submit:hover {
+      cursor: pointer;
+    }
+
+    sup {
+      color: red;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="forms">
+    <form action="">
+      <label for="fname">First Name: <sup>*</sup>
+        <input type="text" id="fname" name="fname" required /><br /> </label><br />
+      <label for="lname">Last Name: <sup>*</sup>
+        <input type="text" id="lname" name="lname" required /><br />
+      </label>
+
+      <p>Select The 1 Skills Out Of 3 -<sup>*</sup></p>
+
+      <label for="VueJS">VueJS
+        <input type="radio" id="VueJS" name="skill" value="VueJS" required />
+      </label>
+      <label for="Angular JS">Angular JS
+        <input type="radio" id="Angular JS" name="skill" value="Angular JS" />
+      </label>
+      <label for="React JS">React JS
+        <input type="radio" id="React JS" name="skill" value="React JS" />
+      </label>
+
+      <p>Select Preferred Location - <sup>*</sup></p>
+      <label for="Bombay">Bombay
+        <input type="radio" name="bombay" id="bombay" value="bombay" />
+      </label>
+      <label for="Delhi">Delhi
+        <input type="radio" name="delhi" id="delhi" value="delhi" />
+      </label>
+      <label for="Kolkata">Kolkata
+        <input type="radio" name="kolkata" id="kolkata" value="kolkata" />
+      </label>
+      <label for="Chennai">Chennai
+        <input type="radio" name="chennai" id="chennai" value="chennai" /> </label><br />
+      <input type="submit" value="submit" id="submit" />
+    </form>
+  </div>
+</body>
+
+</html>
